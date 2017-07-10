@@ -18,7 +18,7 @@ class Equipo(models.Model):
         self.save()
 
     def __unicode__(self):
-        return selfname
+        return self.name
 
 class Jugador(models.Model):
     team = models.ForeignKey('Equipo')
